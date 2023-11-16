@@ -10,6 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2023_11_16_002020) do
+
+  create_table "monitoring_data", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
+    t.float "temperature"
+    t.float "humidity"
+    t.float "lux"
+    t.datetime "recorded_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
 end
