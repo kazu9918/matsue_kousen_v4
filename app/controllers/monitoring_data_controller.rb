@@ -1,4 +1,6 @@
 class MonitoringDataController < ApplicationController
+  before_action :authenticate, only: [:create]
+
   def create
     @monitoring_data = MonitoringData.new(monitoring_data_params)
     if @monitoring_data.save
@@ -27,5 +29,11 @@ class MonitoringDataController < ApplicationController
 
   def monitoring_data_params
     params.permit(:temperature, :humidity, :lux, :recorded_at)
+  end
+
+  def authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+      username == "expected_username" && password == "expected_password"
+    end
   end
 end
