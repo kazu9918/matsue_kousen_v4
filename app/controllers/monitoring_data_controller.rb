@@ -2,7 +2,7 @@ class MonitoringDataController < ApplicationController
   before_action :authenticate, only: [:create]
 
   def create
-    @monitoring_data = MonitoringData.new(monitoring_data_params)
+    @monitoring_data = MonitoringDatum.new(monitoring_data_params)
     if @monitoring_data.save
       render json: @monitoring_data, status: :created
     else
@@ -11,17 +11,17 @@ class MonitoringDataController < ApplicationController
   end
 
   def temperature_data
-    @temperature_data = MonitoringData.select(:recorded_at, :temperature)
+    @temperature_data = MonitoringDatum.select(:recorded_at, :temperature)
     render json: @temperature_data
   end
 
   def humidity_data
-    @humidity_data = MonitoringData.select(:recorded_at, :humidity)
+    @humidity_data = MonitoringDatum.select(:recorded_at, :humidity)
     render json: @humidity_data
   end
 
   def lux_data
-    @lux_data = MonitoringData.select(:recorded_at, :lux)
+    @lux_data = MonitoringDatum.select(:recorded_at, :lux)
     render json: @lux_data
   end
 
