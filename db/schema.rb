@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2023_11_16_002020) do
 
-  create_table "monitoring_data", charset: "utf8mb4", collation: "utf8mb4_general_ci", force: :cascade do |t|
+  create_table "monitoring_data", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.float "temperature"
     t.float "humidity"
     t.float "lux"
