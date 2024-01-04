@@ -1,10 +1,9 @@
 import React from 'react';
-import { LuxChart } from '../components/chart/lux-chart';
+import { LuxCreateChart } from '../components/chart/lux-create-chart';
 
 
 export const Lux = () => {
-
   return (
-    <LuxChart />
+    <LuxCreateChart />
   )
 }

@@ -1,10 +1,9 @@
 import React from 'react';
-import { HumidityChart } from '../components/chart/humidity-chart';
+import { HumidityCreateChart } from '../components/chart/humidity-create-chart';
 
 
 export const Humidity = () => {
-
   return (
-    <HumidityChart />
+    <HumidityCreateChart />
   )
 }

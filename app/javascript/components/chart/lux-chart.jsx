@@ -1,9 +1,9 @@
 import React from 'react';
-import { CreateChart } from '../../utils/chart/create-chart';
+import { CreateChart } from '../../../utils/chart/create-chart';
 
 
 export const LuxChart = () => {
-  const baseURL = "/monitoring_data/temperature";
+  const baseURL = "/monitoring_data/lux";
 
   return (
     <CreateChart baseURL={baseURL} labelName={'光度'}/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { CreateChart } from '../../utils/chart/create-chart';
+import { CreateChart } from '../../packs/utils/chart/create-chart';
 
 
 export const TemperatureChart = () => {

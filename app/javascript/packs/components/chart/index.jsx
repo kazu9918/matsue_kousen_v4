@@ -1,3 +1,3 @@
-export { TemperatureChart } from './temperature-chart';
-export { HumidityChart } from './humidity-chart'
-export { LuxChart } from './lux-chart'
+export { TemperatureCreateChart } from './temperature-create-chart'
+export { HumidityCreateChart } from './humidity-create-chart'
+export { LuxCreateChart } from './lux-create-chart'

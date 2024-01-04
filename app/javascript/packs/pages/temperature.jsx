@@ -1,14 +1,9 @@
 import React from 'react';
-import { TemperatureChart } from '../components/chart/temperature-chart';
-import { Button } from '../components/button';
+import { TemperatureCreateChart } from '../components/chart/temperature-create-chart'; 
 
 
 export const Temperature = () => {
-
   return (
-    <>
-      <Button to={'/pages/lux'} />
-      <TemperatureChart />
-    </>
+    <TemperatureCreateChart />
   )
 }
