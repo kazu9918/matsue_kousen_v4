@@ -2,7 +2,7 @@ class MonitoringDataController < ApplicationController
   before_action :authenticate, only: [:create]
 
   def create
-    @monitoring_data = MonitoringData.new(monitoring_data_params)
+    @monitoring_data = MonitoringDatum.new(monitoring_data_params)
     if @monitoring_data.save
       render json: @monitoring_data, status: :created
     else
