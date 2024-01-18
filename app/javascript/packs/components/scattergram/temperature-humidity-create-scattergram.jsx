@@ -64,7 +64,7 @@ export const TemperatureHumidityCreateScattergram = () => {
     sx += data.x;
     sy += data.y;
     sxy += data.x * data.y;
-    sxsq += Math.pow(val.x,2);
+    sxsq += Math.pow(data.x,2);
   });
 
   let xAxis = sx/ScatterData.length;
